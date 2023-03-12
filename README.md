@@ -1,4 +1,4 @@
-# <img src="https//www.github.com/awesomelewis2007/quickc/blob/master/logo.png?raw=true" width=25> Quick C
+# <img src="https://raw.githubusercontent.com/awesomelewis2007/quickc/master/logo.png" width=25> Quick C
 A C/C++ quick runner for testing small snippets of C/C++ code.
 
 ## ❓ Usage
