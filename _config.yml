@@ -2,3 +2,4 @@ remote_theme: pages-themes/minimal@v0.2.0
 title: Quick C
 description: A C/C++ quick runner for testing small snippets of C/C++ code.
 logo: logo.png
+show_downloads: true
