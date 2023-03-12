@@ -36,7 +36,7 @@ init:
 	mkdir bin
 
 compile:
-	$(CC) $(CFLAGS) -std=$(STD) $(SRC)/*.cpp -o $(OUTPUT) -I $(LIB)
+	$(CC) $(CFLAGS) -std=$(STD) $(SRC)/main.cpp -o $(OUTPUT) -I $(LIB)
 
 configure_test:
 	cp tests/test_check_hello.c $(BIN)/test_check_hello.c
