@@ -29,7 +29,7 @@ OUTPUT = $(BIN)/quickc
 include CFLAGS.conf
 include STD.conf
 
-all: init compile run
+all: init compile
 
 init:
 	rm -rf bin
