@@ -1,8 +1,8 @@
-# Quick C (main.c)
+# Quick C (makefile)
 # A quick C and C++ runner
 # Github: https://www.github.com/awesomelewis2007/quickc
 #
-# Main entry point for the program
+# Makefile for quickc
 
 
 # Compiler
