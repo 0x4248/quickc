@@ -1,8 +1,9 @@
-// Quick C (help.h)
-// A quick C and C++ runner
-// Github: https://www.github.com/awesomelewis2007/quickc
-//
-// Help function
+/* Quick C (help.h)
+ * A quick C and C++ runner
+ * Github: https://www.github.com/awesomelewis2007/quickc
+ *
+ * Help function
+*/
 
 #include <iostream>
 #include <string>

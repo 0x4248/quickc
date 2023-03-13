@@ -1,8 +1,9 @@
-// Quick C (logger.c)
-// A quick C and C++ runner
-// Github: https://www.github.com/awesomelewis2007/quickc
-//
-// Logging functions
+/* Quick C (logger.c)
+ * A quick C and C++ runner
+ * Github: https://www.github.com/awesomelewis2007/quickc
+ *
+ * Logging functions
+*/
 
 #include <iostream>
 #include <string>

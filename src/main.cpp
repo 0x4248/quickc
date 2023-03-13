@@ -1,8 +1,9 @@
-// Quick C (main.c)
-// A quick C and C++ runner
-// Github: https://www.github.com/awesomelewis2007/quickc
-//
-// Main entry point for the program
+/* Quick C (main.c)
+ * A quick C and C++ runner
+ * Github: https://www.github.com/awesomelewis2007/quickc
+ *
+ * Main entry point for the program
+*/
 
 #include <iostream>
 #include <string>
