@@ -1,42 +1,8 @@
-// Console_colour
-// A simple header file to add colour to your console output.
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// By: awesomelewis2007
-// GitHub: https://www.github.com/awesomelewis2007/Console_colour
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// Usage:
-// Simple hello world program:
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// #include <iostream>
-// #include "colour.h"
-// int main()
-// {
-//     ascii_colours::normal normal;
-//     ascii_colours::bold bold;
-//     ascii_colours::italic italic;
-//     ascii_colours::underline underline;
-//     ascii_colours::bold_italic bold_italic;
-//     ascii_colours::bold_underline bold_underline;
-//     ascii_colours::underline_italic underline_italic;
-//     ascii_colours::bold_underline_italic bold_underline_italic;
-//     std::cout << normal.red << "Hello World!" << normal.reset << std::endl;
-//     std::cout << bold.red << "Hello World!" << bold.reset << std::endl;
-//     std::cout << italic.red << "Hello World!" << italic.reset << std::endl;
-//     std::cout << underline.red << "Hello World!" << underline.reset << std::endl;
-//     std::cout << bold_italic.red << "Hello World!" << bold_italic.reset << std::endl;
-//     std::cout << bold_underline.red << "Hello World!" << bold_underline.reset << std::endl;
-//     std::cout << underline_italic.red << "Hello World!" << underline_italic.reset << std::endl;
-//     std::cout << bold_underline_italic.red << "Hello World!" << bold_underline_italic.reset << std::endl;
-//     std::cout << normal.green << "Hello World!" << normal.reset << std::endl;
-//     std::cout << normal.blue << "Hello World!" << normal.reset << std::endl;
-//     std::cout << normal.yellow << "Hello World!" << normal.reset << std::endl;
-//     std::cout << normal.magenta << "Hello World!" << normal.reset << std::endl;
-//     std::cout << normal.cyan << "Hello World!" << normal.reset << std::endl;
-//     std::cout << normal.white << "Hello World!" << normal.reset << std::endl;
-//     std::cout << normal.black << "Hello World!" << normal.reset << std::endl;
-//     return 0;
-// }
-////////////////////////////////////////////////////////////////////////////////////////////////////
+/* Console_colour
+ *  A simple header file to add colour to your console output.
+ *  By: awesomelewis2007
+ *  GitHub: https://www.github.com/awesomelewis2007/Console_colour
+*/
 
 #ifndef COLOUR
 #define COLOUR
