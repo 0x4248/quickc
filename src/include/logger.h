@@ -11,6 +11,13 @@
 
 #include "../lib/nice_verbose.h"
 
+/**
+ * Log a message to the console and/or to a log file
+ * @param message The message to log
+ * @param verbose Whether to log to the console
+ * @param log_to_file Whether to log to a file
+ * @returns void
+*/
 void log(std::string message, bool verbose, bool log_to_file) {
     if (verbose) {
         nice_verbose::log(message);
@@ -22,6 +29,13 @@ void log(std::string message, bool verbose, bool log_to_file) {
 
 }
 
+/**
+ * Log an error to the console and/or to a log file
+ * @param message The message to log
+ * @param verbose Whether to log to the console
+ * @param log_to_file Whether to log to a file
+ * @returns void
+*/
 void error(std::string message, bool verbose, bool log_to_file) {
     if (verbose) {
         nice_verbose::error(message);

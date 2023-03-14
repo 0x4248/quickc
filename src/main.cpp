@@ -58,13 +58,22 @@ int main(int argc, char *argv[]) {
         std::cout << "Invalid file type" << std::endl;
         return 1;
     }
+    int code;
     if (type == "c"){
         log("Compiling C file", verbose, log_to_file);
         std::string compile_command = "gcc " + file + " -o quickc.tmp " + flags;
         std::string run_command = "./quickc.tmp " + args;
-        system(compile_command.c_str());
+        code = system(compile_command.c_str());
+        if (code != 0) {
+            error("Command exited with non-zero code", verbose, log_to_file);
+            exit(1);
+        }
         log("Running C file", verbose, log_to_file);
-        system(run_command.c_str());    
+        code = system(run_command.c_str());
+        if (code != 0) {
+            error("Command exited with non-zero code", verbose, log_to_file);
+        }
+        
         log("Removing temporary file", verbose, log_to_file);
         std::filesystem::remove("quickc.tmp");
     }
@@ -72,9 +81,16 @@ int main(int argc, char *argv[]) {
         log("Compiling C++ file", verbose, log_to_file);
         std::string compile_command = "g++ " + file + " -o quickc.tmp " + flags;
         std::string run_command = "./quickc.tmp " + args;
-        system(compile_command.c_str());
+        code = system(compile_command.c_str());
+        if (code != 0) {
+            error("Command exited with non-zero code", verbose, log_to_file);
+            exit(1);
+        }
         log("Running C++ file", verbose, log_to_file);
-        system(run_command.c_str());    
+        code = system(run_command.c_str());
+        if (code != 0) {
+            error("Command exited with non-zero code", verbose, log_to_file);
+        }
         log("Removing temporary file", verbose, log_to_file);
         std::filesystem::remove("quickc.tmp");
     }
