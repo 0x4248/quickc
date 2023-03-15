@@ -14,10 +14,22 @@
 #include "include/logger.h"
 
 int main(int argc, char *argv[]) {
+    if (argc < 2) {
+        std::cout << "Usage: quickc <file> <flags file> [args]" << std::endl;
+        std::cout << "For help run quickc -quickh" << std::endl;
+        return 1;
+    }
     bool verbose = false;
     bool log_to_file = false;
+
     std::string file = argv[1];
-    std::string flags_file = argv[2];
+    std::string flags_file;
+    if (argc > 2) {
+        flags_file = argv[2];
+    } else {
+        flags_file = ".";
+    }
+
     std::string args = "";
     for (int i = 3; i < argc; i++) {
         args += argv[i];
