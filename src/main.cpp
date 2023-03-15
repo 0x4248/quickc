@@ -16,8 +16,15 @@
 int main(int argc, char *argv[]) {
     bool verbose = false;
     bool log_to_file = false;
+
     std::string file = argv[1];
-    std::string flags_file = argv[2];
+    std::string flags_file;
+    if (argc > 2) {
+        flags_file = argv[2];
+    } else {
+        flags_file = ".";
+    }
+
     std::string args = "";
     for (int i = 3; i < argc; i++) {
         args += argv[i];
