@@ -14,6 +14,11 @@
 #include "include/logger.h"
 
 int main(int argc, char *argv[]) {
+    if (argc < 2) {
+        std::cout << "Usage: quickc <file> <flags file> [args]" << std::endl;
+        std::cout << "For help run quickc -quickh" << std::endl;
+        return 1;
+    }
     bool verbose = false;
     bool log_to_file = false;
 
