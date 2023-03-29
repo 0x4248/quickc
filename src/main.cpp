@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
     }
     std::string flags = "";
     if (flags_file == ".") {
-        flags = "-Wall -O2";
+        flags = "-Wall";
     } else {
         std::ifstream flags_file_stream(flags_file);
         std::getline(flags_file_stream, flags);
