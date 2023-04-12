@@ -1,6 +1,8 @@
 # <img src="https://raw.githubusercontent.com/awesomelewis2007/quickc/master/logo.png" width=25> Quick C
 A C/C++ quick runner for testing small snippets of C/C++ code.
 
+The program compiles and runs the C/C++ code in one command. It also supports flags and arguments. This makes it easier and faster to test small snippets of code.
+
 ## ❓ Usage
 ```bash
 quickc <file> <flags_file> <args_sent_to_program>
