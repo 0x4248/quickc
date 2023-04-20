@@ -1,6 +1,7 @@
 /* Console_colour
  * A simple header file to add colour to your console output.
  * GitHub: https://www.github.com/awesomelewis2007/cpp_console_colour
+ * License: GPL-3.0
  * By: Lewis Evans
 */
 
