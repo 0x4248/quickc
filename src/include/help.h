@@ -3,12 +3,12 @@
  * Github: https://www.github.com/awesomelewis2007/quickc
  *
  * Help function
-*/
+ */
 
 #include <iostream>
 #include <string>
 
-void help(){
+void help() {
     std::cout << "Usage: quickc <File> <Flags file> <args>" << std::endl;
     std::cout << "Options:" << std::endl;
     std::cout << "  -quickv  Verbose" << std::endl;

@@ -3,11 +3,11 @@
  * Github: https://www.github.com/awesomelewis2007/quickc
  *
  * Logging functions
-*/
+ */
 
+#include <fstream>
 #include <iostream>
 #include <string>
-#include <fstream>
 
 #include "../lib/nice_verbose.h"
 
@@ -17,16 +17,15 @@
  * @param verbose Whether to log to the console
  * @param log_to_file Whether to log to a file
  * @returns void
-*/
+ */
 void log(std::string message, bool verbose, bool log_to_file) {
     if (verbose) {
         nice_verbose::log(message);
     }
     if (log_to_file) {
         std::ofstream log_file("quickc.log", std::ios::app);
-        log_file <<" [LOG]   " <<message << std::endl;
+        log_file << " [LOG]   " << message << std::endl;
     }
-
 }
 
 /**
@@ -35,13 +34,13 @@ void log(std::string message, bool verbose, bool log_to_file) {
  * @param verbose Whether to log to the console
  * @param log_to_file Whether to log to a file
  * @returns void
-*/
+ */
 void error(std::string message, bool verbose, bool log_to_file) {
     if (verbose) {
         nice_verbose::error(message);
     }
     if (log_to_file) {
         std::ofstream log_file("quickc.log", std::ios::app);
-        log_file <<" [ERROR] " <<message << std::endl;
+        log_file << " [ERROR] " << message << std::endl;
     }
 }

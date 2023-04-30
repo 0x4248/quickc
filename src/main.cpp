@@ -3,12 +3,12 @@
  * Github: https://www.github.com/awesomelewis2007/quickc
  *
  * Main entry point for the program
-*/
+ */
 
+#include <filesystem>
+#include <fstream>
 #include <iostream>
 #include <string>
-#include <fstream>
-#include <filesystem>
 
 #include "include/help.h"
 #include "include/logger.h"
@@ -46,12 +46,12 @@ int main(int argc, char *argv[]) {
             flags.erase(flags.find("-quickv"), 7);
             log("Verbose mode enabled", verbose, log_to_file);
         }
-        if(flags.find("-quickl") != std::string::npos) {
+        if (flags.find("-quickl") != std::string::npos) {
             log_to_file = true;
             flags.erase(flags.find("-quickl"), 7);
             log("Logging to file enabled", verbose, log_to_file);
         }
-        if(flags.find("-quickh") != std::string::npos) {
+        if (flags.find("-quickh") != std::string::npos) {
             log("Help flag raised running help", verbose, log_to_file);
             help();
             return 0;
@@ -59,10 +59,11 @@ int main(int argc, char *argv[]) {
     }
     std::string type = "";
     std::string extension = file.substr(file.find_last_of(".") + 1);
-    if (extension == "c"){
+    if (extension == "c") {
         log("File type is C", verbose, log_to_file);
         type = "c";
-    } else if (extension == "cpp" || extension == "cc" || extension == "cxx" || extension == "c++") {
+    } else if (extension == "cpp" || extension == "cc" || extension == "cxx" ||
+               extension == "c++") {
         log("File type is C++", verbose, log_to_file);
         type = "cpp";
     } else {
@@ -71,7 +72,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     int code;
-    if (type == "c"){
+    if (type == "c") {
         log("Compiling C file", verbose, log_to_file);
         std::string compile_command = "gcc " + file + " -o quickc.tmp " + flags;
         std::string run_command = "./quickc.tmp " + args;
@@ -85,11 +86,11 @@ int main(int argc, char *argv[]) {
         if (code != 0) {
             error("Command exited with non-zero code", verbose, log_to_file);
         }
-        
+
         log("Removing temporary file", verbose, log_to_file);
         std::filesystem::remove("quickc.tmp");
     }
-    if (type == "cpp"){
+    if (type == "cpp") {
         log("Compiling C++ file", verbose, log_to_file);
         std::string compile_command = "g++ " + file + " -o quickc.tmp " + flags;
         std::string run_command = "./quickc.tmp " + args;
