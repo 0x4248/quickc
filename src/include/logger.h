@@ -1,6 +1,8 @@
 /* Quick C (logger.c)
  * A quick C and C++ runner
  * Github: https://www.github.com/awesomelewis2007/quickc
+ * License: GNU General Public License v3.0
+ * By: Lewis Evans
  *
  * Logging functions
  */
