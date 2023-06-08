@@ -5,8 +5,8 @@
  * By: Lewis Evans
  */
 
-#ifndef COLOUR
-#define COLOUR
+#ifndef CPP_CONSOLE_COLOUR
+#define CPP_CONSOLE_COLOUR
 #include <iostream>
 #include <string>
 
@@ -110,4 +110,4 @@ class underline_italic {
 
 } // namespace ascii_colours
 
-#endif // COLOUR
+#endif // CPP_CONSOLE_COLOUR
