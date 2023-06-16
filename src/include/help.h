@@ -10,6 +10,10 @@
 #include <iostream>
 #include <string>
 
+/**
+ * Help message
+ * @returns void
+*/
 void help() {
     std::cout << "Usage: quickc <File> <Flags file> <args>" << std::endl;
     std::cout << "Options:" << std::endl;

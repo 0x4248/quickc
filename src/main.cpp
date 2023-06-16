@@ -17,6 +17,12 @@
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
+        /**
+         * Usage message
+         * If the user does not provide enough arguments
+         * then print the usage message and exit with code 1
+         * to indicate an error has occurred on the program
+        */
         std::cout << "Usage: quickc <file> <flags file> [args]" << std::endl;
         std::cout << "For help run quickc -quickh" << std::endl;
         return 1;
@@ -44,16 +50,19 @@ int main(int argc, char *argv[]) {
         std::ifstream flags_file_stream(flags_file);
         std::getline(flags_file_stream, flags);
         if (flags.find("-quickv") != std::string::npos) {
+            /* Verbose mode */
             verbose = true;
             flags.erase(flags.find("-quickv"), 7);
             log("Verbose mode enabled", verbose, log_to_file);
         }
         if (flags.find("-quickl") != std::string::npos) {
+            /* Log to file */
             log_to_file = true;
             flags.erase(flags.find("-quickl"), 7);
             log("Logging to file enabled", verbose, log_to_file);
         }
         if (flags.find("-quickh") != std::string::npos) {
+            /* Help flag */
             log("Help flag raised running help", verbose, log_to_file);
             help();
             return 0;
