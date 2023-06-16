@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
          * If the user does not provide enough arguments
          * then print the usage message and exit with code 1
          * to indicate an error has occurred on the program
-        */
+         */
         std::cout << "Usage: quickc <file> <flags file> [args]" << std::endl;
         std::cout << "For help run quickc -quickh" << std::endl;
         return 1;
