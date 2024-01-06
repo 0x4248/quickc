@@ -1,6 +1,6 @@
 # Quick C (makefile)
 # A quick C and C++ runner
-# Github: https://www.github.com/awesomelewis2007/quickc
+# Github: https://www.github.com/lewisevans2007/quickc
 #
 # Makefile for quickc
 
