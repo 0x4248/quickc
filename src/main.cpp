@@ -1,8 +1,8 @@
 /* Quick C (main.c)
  * A quick C and C++ runner
- * Github: https://www.github.com/lewisevans2007/quickc
+ * Github: https://www.github.com/0x4248/quickc
  * License: GNU General Public License v3.0
- * By: Lewis Evans
+ * By: 0x4248
  *
  * Main entry point for the program
  */
